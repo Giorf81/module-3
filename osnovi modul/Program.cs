@@ -5,15 +5,21 @@ class MainClass
     public static void Main(string[] args)
     {
 
-        const string myname = "Jane";
+        string MyName = "Danil";
+        byte age = 16;
+        bool pet = false;
+        float legsize = 999;
 
-        Console.WriteLine(myname);
+        Console.WriteLine($"My name is {MyName}");
+        Console.WriteLine($"MyAge {age}");
+        Console.WriteLine($"Do I have a pet? {pet}");
+        Console.WriteLine($"My shoe size is {legsize}");
 
-        Console.WriteLine("Привет мир \n\tМне 16 лет \n\tмое имя is \n Jane");
-
-        Console.WriteLine("\u0023");
-
-        Console.ReadKey();
-
+    }
+    enum Semaphore
+    {
+        Red = 100,
+        Yellow = 200,
+        Green = 300
     }
 }
