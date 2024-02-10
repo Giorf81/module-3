@@ -5,16 +5,14 @@ class MainClass
     public static void Main(string[] args)
     {
 
-        string MyName = "Danil";
-        byte age = 16;
-        bool pet = false;
-        float legsize = 999;
+        Console.Write("Введите имя: ");
+        var name = Console.ReadLine();
+        Console.Write("age? ");
+        var age = Convert.ToInt32(Console.ReadLine());
+        Console.Write("birthday? ");
+        var birthdate = Console.ReadLine();
 
-        Console.WriteLine($"My name is {MyName}");
-        Console.WriteLine($"MyAge {age}");
-        Console.WriteLine($"Do I have a pet? {pet}");
-        Console.WriteLine($"My shoe size is {legsize}");
-
+        Console.WriteLine("твое имя: {0}, твой возраст: {1}, твой др: {2}", name, age, birthdate);
     }
     enum Semaphore
     {
